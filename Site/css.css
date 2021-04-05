@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-image: url(img/background_Screw.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: scroll;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#logo-screw{
+    color: white;
+    font-size: 2.2em;
+    display: inline;
+    margin-left: 50px;
+}
+
+#logo-drones{
+    color: rgb(253, 152, 21);
+}
+
+nav{
+    height: 80px;
+    border-bottom: solid 1px white;
+    margin-top: 20px;
+}
+
+
+nav ul{
+    display: inline;
+    margin-left: 50%;
+    word-spacing: 10px;
+}
+
+nav ul li{
+    display: inline;
+    text-decoration: none;
+}
+
+nav a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 5px;
+    border: solid 2px transparent;
+}
+
+nav a:hover{
+    color: rgb(253, 152, 21);
+    
+    border-bottom: solid 2px rgb(253, 152, 21);
+}
+
+#home{
+    margin-top: 250px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+#home p{
+    color: rgb(253, 152, 21);
+    width: 500px;
+    text-align: center;
+}
+
+.home-p{
+    background-color: rgb(97, 97, 97);
+    margin: 30px 0 0 420px;
+    width: 500px;
+    padding: 10px;
+}
+
+#sobre{
+    margin: 100px 0 150px 0;
+    padding: 50px 50px 0 50px;
+    margin-left: 100px;
+    width: calc(100% - 300px);
+    border-bottom: solid 4px black;
+    font-size: 1.3em;
+}
+
+#sobre h2{
+    font-size: 2em;
+}
+
+#sobre p{
+    margin: 30px 0 0 50px;
+    text-align: left;
+}
+
+#planos{
+    height: 700px;
+    background-color: #afafaf;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 500px;
+    grid-template-areas: "plano-card1 plano-card2 plano-card3";
+    justify-content: center;
+    align-content: center;
+}
+
+.container-plano-card :nth-child(1){
+    grid-area: plano-card1;
+}
+
+.container-plano-card :nth-child(2){
+    grid-area: plano-card2;
+}
+
+.container-plano-card :nth-child(3){
+    grid-area: plano-card3;
+}
+
+.plano-card{
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+
+.plano-card h3{
+    color: #696969;
+    font-size: 2em;
+    text-align: center;
+}
+
+.plano-card p{
+    color: #5e5151;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.plano-card svg{
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+#duvida{
+    height: 600px;
+    background-color: #d6d6d6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas: 
+        "duvida-texto duvida-form"
+    ;
+
+    justify-content: center;
+    align-content: center;
+}
+
+
+.duvida-texto{
+    padding: 0 40px;
+    align-self: center;
+    grid-area: duvida-texto;
+}
+
+#duvida p{
+    color: #757575;
+    text-align: left;
+}
+
+#duvida h2{
+    font-size: 3em;
+    color: #5e5749;
+}
+
+#duvida form{
+   padding: 0 40px;
+   align-self: center;
+   grid-area: duvida-form;
+}
+
+#duvida input{
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#duvida textarea{
+    resize: none;
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+
+#contato{
+    background-color: #313131;
+    height: 450px;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50px 300px 50px;
+    grid-template-areas: 
+        "titulo titulo"
+        "rede-social map"
+        "endereco endereco"
+    ;
+    
+    justify-content: center;
+    align-content: center;
+}
+
+.contato-titulo{
+    font-size: 2em;
+    justify-self: center;
+    grid-area: titulo;
+}
+
+.rede-social{
+    margin-top: 50px;
+    display: inline;
+    align-self: center;
+    justify-self: center;
+    grid-area: rede-social;
+}
+
+.rede-social h3{
+    font-size: 1.5em;
+}
+
+.rede-social svg{
+    margin-top: 10px;
+    margin-left: 9px;
+}
+
+.map{
+    grid-area: map;
+    align-self: center;
+    justify-self: center;
+}
+
+.endereco{
+    margin-top: 30px;
+    grid-area: endereco;
+
+}
+
+.endereco p{
+    text-align: center;
+}
